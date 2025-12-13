@@ -102,7 +102,9 @@ def main():
     timestep = int(robot.getBasicTimeStep())
 
     # 載入輪廓點
-    apple_points = load_apple_points("apple-clip-art.jpg", N_points=N_POINTS)
+    #apple_points = load_apple_points("apple-clip-art.jpg", N_points=N_POINTS)
+    # bottle.jpg, cat.jpg, cat2.jpg, dog.jpg, bear.jpg
+    apple_points = load_apple_points("bear.jpg", N_points=N_POINTS)
 
     # 建立 IndexedLineSet 串接綠線
     root = robot.getRoot()

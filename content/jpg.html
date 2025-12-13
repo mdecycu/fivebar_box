@@ -142,22 +142,14 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='coord.html'>Next</a> >> coord<br /><h1>Plotter</h1>
-<p>尺寸設計:</p>
-<p>原點位於左側馬達中心，兩馬達距離 0.2m</p>
-<p>馬達半徑與高度 0.02m</p>
-<p>link1 與 link4 長度 0.2m，高與寬為 0.02m</p>
-<p>link2 與 link3 長度 0.27m，高與寬為 0.02m</p>
-<p><img caption="false" height="272" src="./../images/redesign1.png" width="300"/></p>
-<p>Solvespace Plotter 起始狀態圖檔: <a href="./../downloads/plotter_initial_state.slvs">plotter_initial_state.slvs</a></p>
-<p>建立機電模型先備觀念:</p>
-<p style="padding-left: 30px;">Webots 剛體設定架構:</p>
-<p style="padding-left: 30px;">Solid 節點 (Node) 為剛體，包含三個子節點 (Sub-node)，其中 children 為數列可以放入多個 Shape 節點，而這些 Shape 節點所導入場景的幾何形體 (Geometry)，主要用來生成 (Render) 零組件的可視外形。</p>
-<p style="padding-left: 30px;">而 boundingObject 子節點中的幾何形體 (Geometry) 則用於動態模擬 (Dynamic Simulation)，在 physics 子節點中的 Physics 欄位中可直接設定此剛體的質量。或者設定剛體材質密度，乘上 boundingObject 子節點中的幾何形體的體積後，可以取得用來進行動態模擬的剛體質量。</p>
-<p><img alt="" height="247" src="./../images/simplest_rigit_body_object.png" width="300"/></p>
-<p>在 Fivebar_box 模擬場景中，除了兩個以 Cylinder 模擬的 motors 為靜態物件外，其餘各連桿的對應剛體 (即各自的 Solid 節點) 都必須設定 boundingObject 與 physics 內容。</p>
-<p>針對 Fivebar_box 這種平面五連桿封閉機構，Webots 無法對其模型進行 Kinematics (運動) 分析，只能透過 Dynamiccs (動態) 分析聯立運算封閉機構的正確模擬。 </p>
-<br />About << <a href='About.html'>Previous</a> <a href='coord.html'>Next</a> >> coord</div>
+    <div id="tipue_search_content">link1 << <a href='link1.html'>Previous</a> <br /><h1>jpg</h1>
+<p>輸入 jpg 圖檔範例:</p>
+<p><img caption="false" height="106" src="./../images/apple-clip-art.jpg" width="100"/></p>
+<p><img alt="" height="98" src="./../images/bear.jpg" width="100"/></p>
+<p><img alt="" height="100" src="./../images/bottle.jpg" width="100"/></p>
+<p><img alt="" height="126" src="./../images/cat.jpg" width="100"/></p>
+<p><img alt="" height="83" src="./../images/cat2.jpg" width="100"/></p>
+<p><img alt="" height="126" src="./../images/dog.jpg" width="100"/></p><br />link1 << <a href='link1.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

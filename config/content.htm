@@ -20,15 +20,26 @@
 <h1>coord</h1>
 <p>座標系統 (Coordinate):</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">Robot 的座標原點位於 (0, 0, 0)</span> 也就是其 z 軸緊貼地面。</p>
-<p style="padding-left: 30px;"><img alt="" height="195" src="/images/Robot_coord.png" width="200"/></p>
+<p style="padding-left: 30px;"><img alt="" height="195" src="/images/Robot_coord.png" width="200"/> (Robot 座標系統)</p>
 <p style="padding-left: 30px;">left_motor Solid 初始建立時與 Robot 座標相同，但建立幾何形體時<span style="background-color: #ffff00;">座標原點是位於圓柱體的質心</span> (也就是有一半的圓柱體位於地板下)，為了讓高 <span style="background-color: #ffff00;">0.02m 的圓柱體底部能夠站在地板上</span>，因此 left_motor Solid 剛體<span style="background-color: #ffff00;">在 z 軸正向平移 0.01m</span>。</p>
-<p style="padding-left: 30px;"><img alt="" height="187" src="/images/left_motor_coord.png" width="200"/></p>
+<p style="padding-left: 30px;"><img alt="" height="187" src="/images/left_motor_coord.png" width="200"/> (left_motor 座標系統)</p>
 <p style="padding-left: 30px;">joint1 HingeJoint 建立時，其座標系統與 Robot 相同 (因為<span style="background-color: #ffff00;">是 Robot 的 children 中的子節點</span>)。</p>
 <p style="padding-left: 30px;">但 joint1 端點的 link1 Solid 因為長度為 0.2m，高與寬為 0.02m，初始建立剛體 (Solid) 時，其座標系統與 Robot 相同，但因為其底部必須站在地板上，因此也要跟 left_motor Solid 剛體相同，<span style="background-color: #ffff00;">在 z 軸正向平移 0.01m (即其高度的一半)</span>，然後還要<span style="background-color: #ffff00;">在 y 軸正向平移其長度的一半 (即 0.1m)</span> 才能讓 link1 的下方<span style="background-color: #ffff00;">末端與 joint1 旋轉軸中心點 (即 Robot 原點) 對齊</span>。</p>
 <p style="padding-left: 30px;">當 link1 完成定位後，其座標原點已經移動到質心的位置，所以隨後的 joint2 建立時的旋轉中心座標系統，就是依照 link1 質心的座標系統計算，也就是 joint2 的 anchor (即軸的旋轉中心座標) 設定為 (0, 0.1, 0) 的原因。</p>
-<p style="padding-left: 30px;"><img alt="" height="111" src="/images/link1_coord.png" width="200"/></p>
-<p style="padding-left: 30px;">之後接在 joint2 上的 link2，因為不像 link1 的起始角度，故意設為與水平位置垂直 (即 x 與 y 軸方向可以獨立平移)，因此在建立展示幾何形體之前，必須先加上一個 Pose 節點，才能在兩個座標系統的平移與旋轉配合下，將 link2 擺到五軸繪圖機一開始所設定的初始方位。</p><h1>left_motor</h1>
+<p style="padding-left: 30px;"><img alt="" height="111" src="/images/link1_coord.png" width="200"/> (link1 座標系統)</p>
+<p style="padding-left: 30px;">之後接在 joint2 上的 link2，因為不像 link1 的起始角度，故意設為與水平位置垂直 (即 x 與 y 軸方向可以獨立平移)，因此在建立展示幾何形體之前，必須先加上一個 Pose 節點，才能在兩個座標系統的平移與旋轉配合下，將 link2 擺到五軸繪圖機一開始所設定的初始方位。</p>
+<p style="padding-left: 30px;"><img alt="" height="150" src="/images/link2_coord.png" width="200"/> (link2 座標系統)</p>
+<p style="padding-left: 30px;"><img alt="" height="109" src="/images/link3_coord.png" width="200"/> (link3 座標系統)</p>
+<p style="padding-left: 30px;"><img alt="" height="125" src="/images/link4_coord.png" width="200"/> (link4 座標系統)</p><h1>left_motor</h1>
 <p>這裡要說明如何建立 fivebar_box 場景中左側的馬達，馬達將使用圓柱體半徑 0.2m 高度 0.2m 形體模擬。</p>
 <p>首先要開啟 Webots，若採可攜系統，可以先下載 <a href="http://229.cycu.org/portable_2026.7z">portable_2026.7z</a> (387MB) 再下載 <a href="http://229.cycu.org/cad_data.7z">cad_data.7z</a> (包括 NX2312、Blender4.2 與 Webots2023b，4.2GB)，先解開 portable_2026 目錄內容後，再解開 cad_data.7z，並將包含 Webots2023b 目錄的資料，解開到 portable_2026 目錄中的 data 目錄下。</p>
 <p>接著執行 start 開頭的 bat 檔案，就可以在可攜系統所開啟的命令列視窗中輸入 Webotsw 開啟 Webots 套件。</p>
 <p>接下來的每一步操作所產生的場景內容將存入 downloads/plotter 目錄中，每次完成一個零件都將推送提交至 <a href="https://github.com/mdecycu/fivebar_box">https://github.com/mdecycu/fivebar_box</a> 倉儲中，使用者可以 git clone 後，利用 git checkout 檢視每一階段的場景檔案內容。</p><h2>link1</h2>
+<h1>jpg</h1>
+<p>輸入 jpg 圖檔範例:</p>
+<p><img caption="false" height="106" src="/images/apple-clip-art.jpg" width="100"/></p>
+<p><img alt="" height="98" src="/images/bear.jpg" width="100"/></p>
+<p><img alt="" height="100" src="/images/bottle.jpg" width="100"/></p>
+<p><img alt="" height="126" src="/images/cat.jpg" width="100"/></p>
+<p><img alt="" height="83" src="/images/cat2.jpg" width="100"/></p>
+<p><img alt="" height="126" src="/images/dog.jpg" width="100"/></p>
