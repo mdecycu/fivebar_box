@@ -2,7 +2,7 @@
 <p>site: <a href="https://mde.tw/fivebar_box">https://mde.tw/fivebar_box</a> </p>
 <p>repo: <a href="https://github.com/mdecycu/fivebar_box">https://github.com/mdecycu/fivebar_box</a> </p>
 <p>這個網頁在說明如何利用基本的 Cylinder 與 Box 幾何外型零件，建立一個平面五軸繪圖機的 Webots 模擬系統。</p>
-<h1>Plotter</h1>
+<p>Fivebar_box 模擬場景位於 Downloads 目錄中。</p><h1>Plotter</h1>
 <p>尺寸設計:</p>
 <p>原點位於左側馬達中心，兩馬達距離 0.2m</p>
 <p>馬達半徑與高度 0.02m</p>
@@ -17,3 +17,7 @@
 <p><img alt="" height="247" src="/images/simplest_rigit_body_object.png" width="300"/></p>
 <p>在 Fivebar_box 模擬場景中，除了兩個以 Cylinder 模擬的 motors 為靜態物件外，其餘各連桿的對應剛體 (即各自的 Solid 節點) 都必須設定 boundingObject 與 physics 內容。</p>
 <p>針對 Fivebar_box 這種平面五連桿封閉機構，Webots 無法對其模型進行 Kinematics (運動) 分析，只能透過 Dynamiccs (動態) 分析聯立運算封閉機構的正確模擬。 </p>
+<h1>left_motor</h1>
+<p>這裡要說明如何建立 fivebar_box 場景中左側的馬達，馬達將使用圓柱體半徑 0.2m 高度 0.2m 形體模擬。</p>
+<p>首先要開啟 Webots，若採可攜系統，可以先下載 <a href="http://229.cycu.org/portable_2026.7z">portable_2026.7z</a> (387MB) 再下載 <a href="http://229.cycu.org/cad_data.7z">cad_data.7z</a> (包括 NX2312、Blender4.2 與 Webots2023b，4.2GB)，先解開 portable_2026 目錄內容後，再解開 cad_data.7z，並將包含 Webots2023b 目錄的資料，解開到 portable_2026 目錄中的 data 目錄下。</p>
+<p>接著執行 start 開頭的 bat 檔案，就可以在可攜系統所開啟的命令列視窗中輸入 Webotsw 開啟 Webots 套件。</p><h2>link1</h2>
