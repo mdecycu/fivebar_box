@@ -134,51 +134,51 @@ Param.h.v.=00050011
 AddParam
 
 Param.h.v.=00050013
-Param.val=-0.00000000000034717694
+Param.val=-0.15680787807859883354
 AddParam
 
 Param.h.v.=00050014
-Param.val=20.00000000000000000000
+Param.val=19.99938527278707312007
 AddParam
 
 Param.h.v.=00060010
-Param.val=-0.00000000000034717694
+Param.val=-0.15680787807859883354
 AddParam
 
 Param.h.v.=00060011
-Param.val=20.00000000000000000000
+Param.val=19.99938527278707312007
 AddParam
 
 Param.h.v.=00060013
-Param.val=25.31033983712967128099
+Param.val=25.15353195905142058564
 AddParam
 
 Param.h.v.=00060014
-Param.val=29.40141996344111774420
+Param.val=29.40080523622818731155
 AddParam
 
 Param.h.v.=00070010
-Param.val=25.31033983712967128099
+Param.val=25.15353195905142058564
 AddParam
 
 Param.h.v.=00070011
-Param.val=29.40141996344111774420
+Param.val=29.40080523622818731155
 AddParam
 
 Param.h.v.=00070013
-Param.val=39.03163853085676038290
+Param.val=39.00641734307476582444
 AddParam
 
 Param.h.v.=00070014
-Param.val=6.14790491393681026722
+Param.val=6.22543972590424843361
 AddParam
 
 Param.h.v.=00080010
-Param.val=39.03163853085676038290
+Param.val=39.00641734307476582444
 AddParam
 
 Param.h.v.=00080011
-Param.val=6.14790491393681026722
+Param.val=6.22543972590424843361
 AddParam
 
 Param.h.v.=00080013
@@ -205,7 +205,7 @@ Param.val=40.00000000000000000000
 AddParam
 
 Param.h.v.=000a0010
-Param.val=0.00000000000000000000
+Param.val=-0.00000000000000000000
 AddParam
 
 Param.h.v.=000a0011
@@ -221,7 +221,7 @@ Param.val=20.00000000000000000000
 AddParam
 
 Param.h.v.=000b0010
-Param.val=0.00000000000000000000
+Param.val=-0.00000000000000000000
 AddParam
 
 Param.h.v.=000b0011
@@ -229,7 +229,7 @@ Param.val=40.00000000000000000000
 AddParam
 
 Param.h.v.=000b0013
-Param.val=0.00000000000000000000
+Param.val=-0.00000000000000000000
 AddParam
 
 Param.h.v.=000b0014
@@ -245,7 +245,7 @@ Param.val=40.00000000000000000000
 AddParam
 
 Param.h.v.=000c0013
-Param.val=0.00000000000000000000
+Param.val=-0.00000000000000000000
 AddParam
 
 Param.h.v.=000c0014
@@ -253,19 +253,19 @@ Param.val=40.00000000000000000000
 AddParam
 
 Param.h.v.=000d0010
-Param.val=25.31033983712967128099
+Param.val=25.15353195905142058564
 AddParam
 
 Param.h.v.=000d0011
-Param.val=29.40141996344111774420
+Param.val=29.40080523622818731155
 AddParam
 
 Param.h.v.=000d0013
-Param.val=28.64120842880390682694
+Param.val=28.43090117504286951089
 AddParam
 
 Param.h.v.=000d0014
-Param.val=38.83038143462118085836
+Param.val=38.84849548422381104729
 AddParam
 
 Param.h.v.=000e0010
@@ -280,6 +280,37 @@ Param.val=33.69322727385360138896
 AddParam
 
 Param.h.v.=000e0014
+AddParam
+
+Param.h.v.=000f0010
+Param.val=25.15353195905142058564
+AddParam
+
+Param.h.v.=000f0011
+Param.val=29.40080523622818731155
+AddParam
+
+Param.h.v.=000f0013
+Param.val=42.84732959848992095431
+AddParam
+
+Param.h.v.=000f0014
+Param.val=35.97309242900918491159
+AddParam
+
+Param.h.v.=00100010
+Param.val=20.00000000000000000000
+AddParam
+
+Param.h.v.=00100011
+AddParam
+
+Param.h.v.=00100013
+Param.val=20.00000000000000000000
+AddParam
+
+Param.h.v.=00100014
+Param.val=13.52831136978283588235
 AddParam
 
 Request.h.v=00000001
@@ -375,6 +406,20 @@ Request.type=200
 Request.workplane.v=80020000
 Request.group.v=00000002
 Request.construction=1
+AddRequest
+
+Request.h.v=0000000f
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest
+
+Request.h.v=00000010
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
 AddRequest
 
 Entity.h.v=00010000
@@ -493,8 +538,8 @@ Entity.h.v=00050002
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=-0.00000000000034717694
-Entity.actPoint.y=20.00000000000000000000
+Entity.actPoint.x=-0.15680787807859883354
+Entity.actPoint.y=19.99938527278707312007
 Entity.actVisible=1
 AddEntity
 
@@ -511,8 +556,8 @@ Entity.h.v=00060001
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=-0.00000000000034717694
-Entity.actPoint.y=20.00000000000000000000
+Entity.actPoint.x=-0.15680787807859883354
+Entity.actPoint.y=19.99938527278707312007
 Entity.actVisible=1
 AddEntity
 
@@ -520,8 +565,8 @@ Entity.h.v=00060002
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=25.31033983712967128099
-Entity.actPoint.y=29.40141996344111774420
+Entity.actPoint.x=25.15353195905142058564
+Entity.actPoint.y=29.40080523622818731155
 Entity.actVisible=1
 AddEntity
 
@@ -538,8 +583,8 @@ Entity.h.v=00070001
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=25.31033983712967128099
-Entity.actPoint.y=29.40141996344111774420
+Entity.actPoint.x=25.15353195905142058564
+Entity.actPoint.y=29.40080523622818731155
 Entity.actVisible=1
 AddEntity
 
@@ -547,8 +592,8 @@ Entity.h.v=00070002
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=39.03163853085676038290
-Entity.actPoint.y=6.14790491393681026722
+Entity.actPoint.x=39.00641734307476582444
+Entity.actPoint.y=6.22543972590424843361
 Entity.actVisible=1
 AddEntity
 
@@ -565,8 +610,8 @@ Entity.h.v=00080001
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=39.03163853085676038290
-Entity.actPoint.y=6.14790491393681026722
+Entity.actPoint.x=39.00641734307476582444
+Entity.actPoint.y=6.22543972590424843361
 Entity.actVisible=1
 AddEntity
 
@@ -618,7 +663,7 @@ Entity.h.v=000a0001
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=0.00000000000000000000
+Entity.actPoint.x=-0.00000000000000000000
 Entity.actPoint.y=20.00000000000000000000
 Entity.actVisible=1
 AddEntity
@@ -645,7 +690,7 @@ Entity.h.v=000b0001
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=0.00000000000000000000
+Entity.actPoint.x=-0.00000000000000000000
 Entity.actPoint.y=40.00000000000000000000
 Entity.actVisible=1
 AddEntity
@@ -654,7 +699,7 @@ Entity.h.v=000b0002
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=0.00000000000000000000
+Entity.actPoint.x=-0.00000000000000000000
 Entity.actPoint.y=20.00000000000000000000
 Entity.actVisible=1
 AddEntity
@@ -681,7 +726,7 @@ Entity.h.v=000c0002
 Entity.type=2001
 Entity.construction=0
 Entity.workplane.v=80020000
-Entity.actPoint.x=0.00000000000000000000
+Entity.actPoint.x=-0.00000000000000000000
 Entity.actPoint.y=40.00000000000000000000
 Entity.actVisible=1
 AddEntity
@@ -699,8 +744,8 @@ Entity.h.v=000d0001
 Entity.type=2001
 Entity.construction=1
 Entity.workplane.v=80020000
-Entity.actPoint.x=25.31033983712967128099
-Entity.actPoint.y=29.40141996344111774420
+Entity.actPoint.x=25.15353195905142058564
+Entity.actPoint.y=29.40080523622818731155
 Entity.actVisible=1
 AddEntity
 
@@ -708,8 +753,8 @@ Entity.h.v=000d0002
 Entity.type=2001
 Entity.construction=1
 Entity.workplane.v=80020000
-Entity.actPoint.x=28.64120842880390682694
-Entity.actPoint.y=38.83038143462118085836
+Entity.actPoint.x=28.43090117504286951089
+Entity.actPoint.y=38.84849548422381104729
 Entity.actVisible=1
 AddEntity
 
@@ -735,6 +780,59 @@ Entity.type=2001
 Entity.construction=1
 Entity.workplane.v=80020000
 Entity.actPoint.x=33.69322727385360138896
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=000f0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000f0001
+Entity.point[1].v=000f0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=000f0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=25.15353195905142058564
+Entity.actPoint.y=29.40080523622818731155
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=000f0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=42.84732959848992095431
+Entity.actPoint.y=35.97309242900918491159
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=00100000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00100001
+Entity.point[1].v=00100002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=00100001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=20.00000000000000000000
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=00100002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=20.00000000000000000000
+Entity.actPoint.y=13.52831136978283588235
 Entity.actVisible=1
 AddEntity
 
@@ -1080,7 +1178,7 @@ Constraint.h.v=0000002e
 Constraint.type=120
 Constraint.group.v=00000002
 Constraint.workplane.v=80020000
-Constraint.valA=90.00000000000099475983
+Constraint.valA=90.44922608294967858455
 Constraint.entityA.v=00040000
 Constraint.entityB.v=00050000
 Constraint.other=0
@@ -1115,21 +1213,21 @@ Constraint.h.v=00000031
 Constraint.type=120
 Constraint.group.v=00000002
 Constraint.workplane.v=80020000
-Constraint.valA=17.90232581231259345600
+Constraint.valA=18.13590301474723531783
 Constraint.entityA.v=000e0000
 Constraint.entityB.v=00080000
 Constraint.other=1
 Constraint.other2=0
 Constraint.reference=1
-Constraint.disp.offset.x=10.68100312274548890912
-Constraint.disp.offset.y=4.01433674411910601521
+Constraint.disp.offset.x=24.45368649925106652177
+Constraint.disp.offset.y=3.03057364579727961384
 AddConstraint
 
 Constraint.h.v=00000032
 Constraint.type=120
 Constraint.group.v=00000002
 Constraint.workplane.v=80020000
-Constraint.valA=162.09767418768740299129
+Constraint.valA=161.86409698525275757675
 Constraint.entityA.v=00080000
 Constraint.entityB.v=00040000
 Constraint.other=0
@@ -1137,5 +1235,90 @@ Constraint.other2=0
 Constraint.reference=1
 Constraint.disp.offset.x=-7.58090420842907608545
 Constraint.disp.offset.y=5.94580722229731239992
+AddConstraint
+
+Constraint.h.v=00000033
+Constraint.type=120
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=69.62269627651848225014
+Constraint.entityA.v=00060000
+Constraint.entityB.v=000b0000
+Constraint.other=1
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=6.08897607164092580234
+Constraint.disp.offset.y=14.72538090794794385374
+AddConstraint
+
+Constraint.h.v=00000034
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000d0001
+Constraint.ptB.v=000f0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint
+
+Constraint.h.v=00000035
+Constraint.type=121
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=000f0000
+Constraint.entityB.v=00060000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint
+
+Constraint.h.v=00000036
+Constraint.type=120
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=79.50877699710697754654
+Constraint.entityA.v=000f0000
+Constraint.entityB.v=00070000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=12.61287900554191310221
+Constraint.disp.offset.y=-3.85220935144629894609
+AddConstraint
+
+Constraint.h.v=00000037
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000e0001
+Constraint.ptB.v=00100001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint
+
+Constraint.h.v=00000038
+Constraint.type=81
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00100000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint
+
+Constraint.h.v=00000039
+Constraint.type=120
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=71.86409698525275757675
+Constraint.entityA.v=00080000
+Constraint.entityB.v=00100000
+Constraint.other=1
+Constraint.other2=0
+Constraint.reference=1
+Constraint.disp.offset.x=7.58015388510400800470
+Constraint.disp.offset.y=11.86729009881037022467
 AddConstraint
 
