@@ -9,6 +9,6 @@ radian = angle*deg
 
 radian = 79.93*deg
 '''
-radian = 72.0*deg
+radian = 71.86*deg
 
 print(radian)
