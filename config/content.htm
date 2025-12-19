@@ -3,10 +3,17 @@
 <p>repo: <a href="https://github.com/mdecycu/fivebar_box">https://github.com/mdecycu/fivebar_box</a> </p>
 <p>帶有兩個 tutorial 教學影片的檔案:</p>
 <p style="padding-left: 30px;"><a href="http://229.cycu.org/plotter_box_w_mp4_tutorial.7z">http://229.cycu.org/plotter_box_w_mp4_tutorial.7z</a></p>
+<p>以下影片的 Webots 場景位於 <a href="https://github.com/mdecycu/fivebar_box/tree/main/downloads/fivebar_box">https://github.com/mdecycu/fivebar_box/tree/main/downloads/fivebar_box</a> </p>
 <p>Tutorial 1:</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hBFgv5Jr1pQ?si=IHyBP0xyVQAnSZ50" title="YouTube video player" width="560"></iframe></p>
 <p>Tutorial 2:</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MHwzKzW2VeM?si=ZbeyEJN_ycNxWdDe" title="YouTube video player" width="560"></iframe></p>
+<p>Tutorial 3: 將 SolidReference 設定在 joint4 端點的版本</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/f1z9yWpLkHk?si=3JLzFVHp3WsXt7Oe" title="YouTube video player" width="560"></iframe></p>
+<p>Tutorial 4: 將 SolidReference 設定在 joint4 端點的版本</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/VPyjCJ8JhYg?si=vMmwiBppTuG2M-UB" title="YouTube video player" width="560"></iframe></p>
+<p>Tutorial 5: 將 SolidReference 設定在 joint3 端點的版本</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4n2zto1qxO8?si=xz3PaG0zsLORuxdn" title="YouTube video player" width="560"></iframe></p>
 <hr/>
 <p>這個網頁在說明如何利用基本的 Cylinder 與 Box 幾何外型零件，建立一個平面五軸繪圖機的 Webots 模擬系統。</p>
 <p>Fivebar_box 模擬場景位於 Downloads 目錄中。</p>
@@ -41,11 +48,13 @@
 <p style="padding-left: 30px;">之後接在 joint2 上的 link2，因為不像 link1 的起始角度，故意設為與水平位置垂直 (即 x 與 y 軸方向可以獨立平移)，因此在建立展示幾何形體之前，必須先加上一個 Pose 節點，才能在兩個座標系統的平移與旋轉配合下，將 link2 擺到五軸繪圖機一開始所設定的初始方位。</p>
 <p style="padding-left: 30px;"><img alt="" height="150" src="/images/link2_coord.png" width="200"/> (link2 座標系統)</p>
 <p style="padding-left: 30px;"><img alt="" height="109" src="/images/link3_coord.png" width="200"/> (link3 座標系統)</p>
-<p style="padding-left: 30px;"><img alt="" height="125" src="/images/link4_coord.png" width="200"/> (link4 座標系統)</p><h1>left_motor</h1>
+<p style="padding-left: 30px;"><img alt="" height="125" src="/images/link4_coord.png" width="200"/> (link4 座標系統)</p>
+<h1>left_motor</h1>
 <p>這裡要說明如何建立 fivebar_box 場景中左側的馬達，馬達將使用圓柱體半徑 0.2m 高度 0.2m 形體模擬。</p>
 <p>首先要開啟 Webots，若採可攜系統，可以先下載 <a href="http://229.cycu.org/portable_2026.7z">portable_2026.7z</a> (387MB) 再下載 <a href="http://229.cycu.org/cad_data.7z">cad_data.7z</a> (包括 NX2312、Blender4.2 與 Webots2023b，4.2GB)，先解開 portable_2026 目錄內容後，再解開 cad_data.7z，並將包含 Webots2023b 目錄的資料，解開到 portable_2026 目錄中的 data 目錄下。</p>
 <p>接著執行 start 開頭的 bat 檔案，就可以在可攜系統所開啟的命令列視窗中輸入 Webotsw 開啟 Webots 套件。</p>
-<p>接下來的每一步操作所產生的場景內容將存入 downloads/plotter 目錄中，每次完成一個零件都將推送提交至 <a href="https://github.com/mdecycu/fivebar_box">https://github.com/mdecycu/fivebar_box</a> 倉儲中，使用者可以 git clone 後，利用 git checkout 檢視每一階段的場景檔案內容。</p><h2>link1</h2>
+<p>接下來的每一步操作所產生的場景內容將存入 downloads/plotter 目錄中，每次完成一個零件都將推送提交至 <a href="https://github.com/mdecycu/fivebar_box">https://github.com/mdecycu/fivebar_box</a> 倉儲中，使用者可以 git clone 後，利用 git checkout 檢視每一階段的場景檔案內容。</p>
+<h2>link1</h2>
 <h1>jpg</h1>
 <p>輸入 jpg 圖檔範例:</p>
 <p><img caption="false" height="106" src="/images/apple-clip-art.jpg" width="100"/></p>
